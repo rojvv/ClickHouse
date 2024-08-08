@@ -291,7 +291,7 @@ struct FileSegmentsHolder : private boost::noncopyable
 
     size_t size() const { return file_segments.size(); }
 
-    String toString() const;
+    String toString(bool with_state = false) const;
 
     void popFront() { completeAndPopFrontImpl(); }
 
@@ -317,5 +317,7 @@ private:
 };
 
 using FileSegmentsHolderPtr = std::unique_ptr<FileSegmentsHolder>;
+
+String toString(const FileSegments & file_segments, bool with_state = false);
 
 }
