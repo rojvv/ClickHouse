@@ -15,8 +15,8 @@ You can check whether a data type name is case-sensitive in the [system.data_typ
 ClickHouse data types include:
 
 - **Integer types**: [signed and unsigned integers](./int-uint.md) (`UInt8`, `UInt16`, `UInt32`, `UInt64`, `UInt128`, `UInt256`, `Int8`, `Int16`, `Int32`, `Int64`, `Int128`, `Int256`)
-- **Floating-point numbers**: [floats](./float.md)(`Float32` and `Float64`) and [`Decimal` values](./decimal.md)
-- **Boolean**: ClickHouse has a [`Boolean` type](./boolean.md)
+- **Floating-point numbers**: [floats](./float.md) (`Float32` and `Float64`) and [`Decimal` values](./decimal.md)
+- **Boolean**: ClickHouse has a [`Bool` type](./boolean.md)
 - **Strings**: [`String`](./string.md) and [`FixedString`](./fixedstring.md)
 - **Dates**: use [`Date`](./date.md) and [`Date32`](./date32.md) for days, and [`DateTime`](./datetime.md) and [`DateTime64`](./datetime64.md) for instances in time
 - **Object**: the [`Object`](./json.md) stores a JSON document in a single column (deprecated)
