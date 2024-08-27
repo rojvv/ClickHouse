@@ -1725,6 +1725,11 @@ class TestCase:
                 f"localhost	{os.environ['CLICKHOUSE_PORT_TCP']}",
                 "localhost	9000",
             )
+            replace_in_file(
+                self.stdout_file,
+                f"127.0.0.1:{os.environ['CLICKHOUSE_PORT_TCP']}",
+                "127.0.0.1:9000",
+            )
 
         if os.environ.get("CLICKHOUSE_PORT_TCP_SECURE"):
             replace_in_file(
